@@ -48,7 +48,6 @@ RUN update-ca-certificates
 RUN	curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
 RUN	unzip awscliv2.zip && ./aws/install 
 
-COPY config .aws/
 COPY test.sh ${JMETER_HOME}/bin
-COPY tests/trivial/ONS-STAGING-E2E-REGRESSION-PACK_v01.jmx ${JMETER_HOME}/bin
+COPY ONS-STAGING-E2E-REGRESSION-PACK_v01.jmx ${JMETER_HOME}/bin
 COPY jpgc-plancheck-2.4/bin/TestPlanCheck.sh ${JMETER_HOME}/bin
