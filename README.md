@@ -58,6 +58,6 @@ In order to view the results, open folder on your host machine "jmeter-reports",
 
 ## How to read Test results
 
-- Goto foloder jmeter-reports/reports
-- Open index.html is perferred browser on the system
+- Goto folder jmeter-reports/reports
+- Open index.html in perferred browser on the system
 - Jmeter Results from previously ran tests will be shown on this html reports page
