@@ -1,4 +1,4 @@
-## This is derised from medium.com article : https://medium.com/@praveenkrjha93/create-a-docker-file-for-jmeter-along-with-the-plugins-2b8af0eabe4a
+## This is derived from medium.com article : https://medium.com/@praveenkrjha93/create-a-docker-file-for-jmeter-along-with-the-plugins-2b8af0eabe4a
 
 # Step 1
 FROM ubuntu:22.10
