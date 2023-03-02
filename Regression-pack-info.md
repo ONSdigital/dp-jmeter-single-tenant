@@ -1,10 +1,10 @@
 # Additional information for users:
 
-This is a performance/load testing pack that determines how the stability, speed, scalability, and responsiveness of the website holds up under a given workload. Load testing on sandbox will impact internal users as the environment may become instability and this may slow down release velocity. Similarly, load testing on prod will affect the performance of the live site and best not to be carried out when there is a release in place. Hence before applying any load discuss with your tech lead. 
+This is a performance/load testing pack that determines how the stability, speed, scalability, and responsiveness of the website holds up under a given workload. Load testing on sandbox will impact internal users as the environment may become unstable and this may slow down release velocity. Similarly, load testing on prod will affect the performance of the live site and best not to be carried out when there is a release in place. Hence before applying any load discuss with your tech lead. 
 
-This covers the `ONS home page` and `datasets` such as `UK trade` ,` employment labour market`, `economy`, `people population` and many others including few `cantabular census 2021`
+This covers the `ONS home page`, `articles` and `datasets` such as `UK trade` ,`release calendar`, `economy`, `people population` and many others which can be found in jmeter-reports/report/index.html which gets generated when you run jmeter as mentioned in the [readme](https://github.com/ONSdigital/dp-jmeter-single-tenant/blob/507fd63dda1e68d2d7be072dadaf6df7c1a9b017/README.md).
 
-## List of `cmd datasets` that are covered in this pack for our website are as follows, you might need to update the link according to the environment:
+## Concise list of all `cmd datasets` are as follows: 
 
 https://www.ons.gov.uk/datasets/ageing-population-estimates
 https://www.ons.gov.uk/datasets/older-people-economic-activity
@@ -59,14 +59,10 @@ https://www.ons.gov.uk/datasets/wellbeing-quarterly
 https://www.ons.gov.uk/datasets/wellbeing-local-authority
 https://www.ons.gov.uk/datasets/regional-gdp-by-quarter 
 
-User journey related to `Florence`, such as `creating a recipe`, `searching for collections`, `upload a dataset`, `user login`, etc. are also covered in this pack. 
-
-To test `Elasticsearch-data domain` (7.10 as of 2nd March 20203) the [suicides dataset](https://dp-staging.aws.onsdigital.uk/datasets/suicides-in-the-uk/editions/2018/versions/1) filter journey was added to the list which is listed for staging environment.
-
 ## Note: 
-This is not a complete list but to be extended as needed to meet the needs of internal users. 
+This list is for refrence purpose and is not a complete list but to be extended as needed to meet the needs of internal users. 
 
-`Site search`, `release calendar`, `dataset finder` , `topic finder`, `bulletins`, `cmd dimension search`, to name a few that can be added to the list in the future.
+User journey related to `Florence`, such as `creating a recipe`, `searching for collections`, `upload a dataset`, `user login`, etc. along with `Site search`, `dataset finder` , `topic finder`, `bulletins`, and `cmd dimension search`, can be added as and when the requirement arises.
 
 We use Elasticsearch (2.2 unmanaged) to host certain pages of our website which are listed as follows and not added to this test pack 
 https://www.ons.gov.uk/allmethodologies
