@@ -2,7 +2,34 @@
 
 This is a performance/load testing pack that determines how the stability, speed, scalability, and responsiveness of the website holds up under a given workload. Load testing on sandbox will impact internal users as the environment may become unstable and this may slow down release velocity. Similarly, load testing on prod will affect the performance of the live site and best not to be carried out when there is a release in place. Hence before applying any load discuss with your tech lead. 
 
-This covers the `ONS home page`, `articles` and `datasets` such as `UK trade` ,`release calendar`, `economy`, `people population` and many others which can be found in jmeter-reports/report/index.html which gets generated when you run jmeter as mentioned in the [readme](https://github.com/ONSdigital/dp-jmeter-single-tenant/blob/507fd63dda1e68d2d7be072dadaf6df7c1a9b017/README.md).
+It's recommended to run the load test pack in `staging`.
+
+This test pack when run for single user can act as a regression test.
+
+## Instructions to install Jmeter desktop app on Mac
+
+Install `Apache jmeter` version 5.5 by running the following commands:
+
+```shell
+brew install jmeter
+```
+
+Once installed the following command will open up a GUI
+
+```shell
+jmeter
+```
+
+Note:
+The following plugins will be installed automatically
+Install library: json-lib
+Install library: jmeter-plugins-cmn-jmeter
+Install library: cmdrunner
+Install plugin: jpgc-casutg 2.10
+
+Apache jmeter was used to create `ONS-STAGING-E2E-REGRESSION-PACK_v01.jmx`
+
+This test pack covers `ONS home page`, `articles` and `datasets` such as `UK trade` ,`release calendar`, `economy`, `people population` and many others which can be found in `jmeter-reports/report/index.html` which gets generated when you run jmeter as mentioned in the [readme](https://github.com/ONSdigital/dp-jmeter-single-tenant/blob/507fd63dda1e68d2d7be072dadaf6df7c1a9b017/README.md).
 
 ## Concise list of all `cmd datasets` are as follows: 
 
