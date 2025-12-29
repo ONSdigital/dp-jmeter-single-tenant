@@ -1,5 +1,8 @@
 # dp-jmeter-single-tenant
 
+> [!WARNING]
+> This repository was archived in December 2025 as it is no longer in development.
+
 jmeter single tenant with ubuntu image dockerfile build for local test
 
 ## Build jmeter image
